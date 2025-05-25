@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    
+    <!-- Header -->
+    <header class="w-full flex h-[9vh] fixed top-0 justify-between bg-white px-6 items-center shadow-md z-50">
+        <section class="flex w-[370px] h-[50px] justify-between items-center">
+            <img src="./10001.svg" class="w-[140px] h-[60px]">
+            <nav class="flex mt-2 text-lg space-x-6">
+                <a href="#" class="text-black no-underline">Music</a>
+                <a href="#" class="text-black no-underline">Podcasts</a>
+                <a href="#" class="text-black no-underline">Pro</a>
+            </nav>
+        </section>
+
+        <section class="w-[450px] h-[29px] border border-gray-400 bg-white flex items-center rounded-full px-4 mt-2">
+            <input type="text" class="text-center border-none outline-none bg-transparent text-lg w-full text-black" placeholder="🔍Search">
+        </section>
+
+        <section class="flex items-center space-x-6 mt-2">
+            <div class="flex items-center cursor-pointer text-lg">
+                <label class="mr-2">Music Language</label>
+                <select class="border rounded px-2 py-1">
+                    <option>Hindi</option>
+                    <option>English</option>
+                    <option>Tamil</option>
+                    <option>Telugu</option>
+                </select>
+            </div>
+            <a href="#" class="text-black text-lg">Log In</a>
+            <a href="#" class="text-black text-lg">Sign Up</a>
+        </section>
+    </header>
+
+    <!-- Main Layout -->
+    <main class="flex h-screen pt-[9vh]"> 
+        <!-- Sidebar (Left Section) -->
+        <aside class="w-[20%] h-full bg-white border-r p-6 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400">
+            <p class="text-gray-500 uppercase text-sm font-semibold mb-2">Browse</p>
+            <div class="flex flex-col gap-4 text-gray-700 font-medium">
+                <a href="#">New Releases</a>
+                <a href="#">Top Charts</a>
+                <a href="#">Top Playlists</a>
+                <a href="#">Podcasts</a>
+                <a href="#">Top Artists</a>
+                <a href="#">Radio</a>
+            </div>
+            <p class="text-gray-500 uppercase text-sm font-semibold mt-6 mb-2">Library</p>
+            <div class="flex flex-col gap-4 text-gray-700 font-medium">
+                <a href="#" class="flex items-center gap-2">🔄 History</a>
+                <a href="#" class="flex items-center gap-2">🎵 Liked Songs</a>
+                <a href="#" class="flex items-center gap-2">📀 Albums</a>
+                <a href="#" class="flex items-center gap-2">🎙 Podcasts</a>
+                <a href="#" class="flex items-center gap-2">🎤 Artists</a>
+            </div>
+            <button class="mt-6 px-4 py-2 text-teal-500 border border-teal-500 rounded-full w-full text-left">
+                + New Playlist
+            </button>
+        </aside>
+
+        <!-- Main Content (Right Section) -->
+        <section class="flex-1 p-6 overflow-y-auto">
+            <h1 class="text-[25px] text-gray-700 font-bold mb-5">Trending Now</h1>
+            <div class="grid grid-cols-6 gap-4">
+                <!-- Song Card -->
+                <article class="flex flex-col items-center">
+                    <div class="w-32 h-32 relative group">
+                        <img src="./pushpa 2.jpg" class="rounded-md w-full h-full">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50"></div>
+                    </div>
+                    <p class="text-sm font-semibold mt-1">Pushpa 2 The Rule</p>
+                    <p class="text-xs text-gray-500">DSP</p>
+                </article>
+                <article class="flex flex-col items-center">
+                    <div class="w-32 h-32 relative group">
+                        <img src="./Devara-Part-1-Tamil-Tamil-2024-20240926171017-150x150.jpg" class="rounded-md w-full h-full">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50"></div>
+                    </div>
+                    <p class="text-sm font-semibold mt-1">Devara</p>
+                    <p class="text-xs text-gray-500">Tamil</p>
+                </article>
+                <article class="flex flex-col items-center">
+                    <div class="w-32 h-32 relative group">
+                        <img src="./Dragon-Tamil-2025-20250221231203-150x150 - Copy.jpg" class="rounded-md w-full h-full">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50"></div>
+                    </div>
+                    <p class="text-sm font-semibold mt-1">Dragon</p>
+                    <p class="text-xs text-gray-500">Tamil</p>
+                </article>
+                <article class="flex flex-col items-center">
+                    <div class="w-32 h-32 relative group">
+                        <img src="./Chikitu-Vibe-From-Coolie-Tamil-2024-20241212221629-150x150.jpg" class="rounded-md w-full h-full">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50"></div>
+                    </div>
+                    <p class="text-sm font-semibold mt-1">Chikityu</p>
+                    <p class="text-xs text-gray-500">Tamil</p>
+                </article>
+                <article class="flex flex-col items-center">
+                    <div class="w-32 h-32 relative group">
+                        <img src="./charts_Tamil2000s_171230_20240408062044_150x150.jpg" class="rounded-md w-full h-full">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50"></div>
+                    </div>
+                    <p class="text-sm font-semibold mt-1">charts</p>
+                    <p class="text-xs text-gray-500">Tamil</p>
+                </article>
+                <article class="flex flex-col items-center">
+                    <div class="w-32 h-32 relative group">
+                        <img src="./Paiya-Dei-from-Think-Indie-Tamil-2024-20241023225604-150x150.jpg" class="rounded-md w-full h-full">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50"></div>
+                    </div>
+                    <p class="text-sm font-semibold mt-1">paiya</p>
+                    <p class="text-xs text-gray-500">Tamil</p>
+                </article>
+                <article class="flex flex-col items-center">
+                    <div class="w-32 h-32 relative group">
+                        <img src="./Pathikichu-From-Vidaamuyarchi-Tamil-2025-20250119080744-150x150.jpg" class="rounded-md w-full h-full">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50"></div>
+                    </div>
+                    <p class="text-sm font-semibold mt-1">Pathikichu</p>
+                    <p class="text-xs text-gray-500">Tamil</p>
+                </article>
+                <article class="flex flex-col items-center">
+                    <div class="w-32 h-32 relative group">
+                        <img src="./MostSearchedSongsTamil_20250304071903_150x150.jpg" class="rounded-md w-full h-full">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50"></div>
+                    </div>
+                    <p class="text-sm font-semibold mt-1">Nice</p>
+                    <p class="text-xs text-gray-500">Tamil</p>
+                </article>
+                <article class="flex flex-col items-center">
+                    <div class="w-32 h-32 relative group">
+                        <img src="./Chikitu-Vibe-From-Coolie-Tamil-2024-20241212221629-150x150.jpg" class="rounded-md w-full h-full">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50"></div>
+                    </div>
+                    <p class="text-sm font-semibold mt-1">chikitu</p>
+                    <p class="text-xs text-gray-500">Tamil</p>
+                </article>
+                <article class="flex flex-col items-center">
+                    <div class="w-32 h-32 relative group">
+                        <img src="./Amaran-Tamil-Tamil-2024-20241119174100-150x150.jpg" class="rounded-md w-full h-full">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50"></div>
+                    </div>
+                    <p class="text-sm font-semibold mt-1">Amaran</p>
+                    <p class="text-xs text-gray-500">Tamil</p>
+                </article>
+                <article class="flex flex-col items-center">
+                    <div class="w-32 h-32 relative group">
+                        <img src="./Paiya-Dei-from-Think-Indie-Tamil-2024-20241023225604-150x150.jpg" class="rounded-md w-full h-full">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50"></div>
+                    </div>
+                    <p class="text-sm font-semibold mt-1">paiya</p>
+                    <p class="text-xs text-gray-500">Tamil</p>
+                </article>
+                <article class="flex flex-col items-center">
+                    <div class="w-32 h-32 relative group">
+                        <img src="./Pathikichu-From-Vidaamuyarchi-Tamil-2025-20250119080744-150x150.jpg" class="rounded-md w-full h-full">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50"></div>
+                    </div>
+                    <p class="text-sm font-semibold mt-1">Pathikichu</p>
+                    <p class="text-xs text-gray-500">Tamil</p>
+                </article>
+                <!-- More song cards can be added here -->
+            </div>
+
+            <h1 class="text-[25px] text-gray-700 font-bold mt-10 mb-5">Latest Releases</h1>
+            <div class="grid grid-cols-6 gap-4">
+                <article class="flex flex-col items-center">
+                    <div class="w-32 h-32 relative group">
+                        <img src="./MostSearchedSongsTamil_20250304071903_150x150.jpg" class="rounded-md w-full h-full">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50"></div>
+                    </div>
+                    <p class="text-sm font-semibold mt-1">Latest Song 1</p>
+                    <p class="text-xs text-gray-500">Artist Name</p>
+                </article>
+                <article class="flex flex-col items-center">
+                    <div class="w-32 h-32 relative group">
+                        <img src="./Dragon-Tamil-2025-20250221231203-150x150 - Copy.jpg" class="rounded-md w-full h-full">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50"></div>
+                    </div>
+                    <p class="text-sm font-semibold mt-1">Latest Song 2</p>
+                    <p class="text-xs text-gray-500">Artist Name</p>
+                </article>
+                <article class="flex flex-col items-center">
+                    <div class="w-32 h-32 relative group">
+                        <img src="./Paiya-Dei-from-Think-Indie-Tamil-2024-20241023225604-150x150.jpg" class="rounded-md w-full h-full">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50"></div>
+                    </div>
+                    <p class="text-sm font-semibold mt-1">Latest Song 2</p>
+                    <p class="text-xs text-gray-500">Artist Name</p>
+                </article>
+                <article class="flex flex-col items-center">
+                    <div class="w-32 h-32 relative group">
+                        <img src="./charts_Tamil2000s_171230_20240408062044_150x150.jpg" class="rounded-md w-full h-full">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50"></div>
+                    </div>
+                    <p class="text-sm font-semibold mt-1">Latest Song 2</p>
+                    <p class="text-xs text-gray-500">Artist Name</p>
+                </article>
+                <article class="flex flex-col items-center">
+                    <div class="w-32 h-32 relative group">
+                        <img src="./Pathikichu-From-Vidaamuyarchi-Tamil-2025-20250119080744-150x150.jpg" class="rounded-md w-full h-full">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50"></div>
+                    </div>
+                    <p class="text-sm font-semibold mt-1">Latest Song 2</p>
+                    <p class="text-xs text-gray-500">Artist Name</p>
+                </article>
+                <article class="flex flex-col items-center">
+                    <div class="w-32 h-32 relative group">
+                        <img src="./Amaran-Tamil-Tamil-2024-20241119174100-150x150.jpg" class="rounded-md w-full h-full">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50"></div>
+                    </div>
+                    <p class="text-sm font-semibold mt-1">Latest Song 2</p>
+                    <p class="text-xs text-gray-500">Artist Name</p>
+                </article>
+                <article class="flex flex-col items-center">
+                    <div class="w-32 h-32 relative group">
+                        <img src="./Pathikichu-From-Vidaamuyarchi-Tamil-2025-20250119080744-150x150.jpg" class="rounded-md w-full h-full">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50"></div>
+                    </div>
+                    <p class="text-sm font-semibold mt-1">Latest Song 2</p>
+                    <p class="text-xs text-gray-500">Artist Name</p>
+                </article>
+                <article class="flex flex-col items-center">
+                    <div class="w-32 h-32 relative group">
+                        <img src="./Amaran-Tamil-Tamil-2024-20241119174100-150x150.jpg" class="rounded-md w-full h-full">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50"></div>
+                    </div>
+                    <p class="text-sm font-semibold mt-1">Latest Song 2</p>
+                    <p class="text-xs text-gray-500">Artist Name</p>
+                </article>
+                <article class="flex flex-col items-center">
+                    <div class="w-32 h-32 relative group">
+                        <img src="./Pathikichu-From-Vidaamuyarchi-Tamil-2025-20250119080744-150x150.jpg" class="rounded-md w-full h-full">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50"></div>
+                    </div>
+                    <p class="text-sm font-semibold mt-1">Latest Song 2</p>
+                    <p class="text-xs text-gray-500">Artist Name</p>
+                </article>
+                <article class="flex flex-col items-center">
+                    <div class="w-32 h-32 relative group">
+                        <img src="./Amaran-Tamil-Tamil-2024-20241119174100-150x150.jpg" class="rounded-md w-full h-full">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50"></div>
+                    </div>
+                    <p class="text-sm font-semibold mt-1">Latest Song 2</p>
+                    <p class="text-xs text-gray-500">Artist Name</p>
+                </article>
+                <article class="flex flex-col items-center">
+                    <div class="w-32 h-32 relative group">
+                        <img src="./Paiya-Dei-from-Think-Indie-Tamil-2024-20241023225604-150x150.jpg" class="rounded-md w-full h-full">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50"></div>
+                    </div>
+                    <p class="text-sm font-semibold mt-1">paiya</p>
+                    <p class="text-xs text-gray-500">Tamil</p>
+                </article>
+                <article class="flex flex-col items-center">
+                    <div class="w-32 h-32 relative group">
+                        <img src="./Pathikichu-From-Vidaamuyarchi-Tamil-2025-20250119080744-150x150.jpg" class="rounded-md w-full h-full">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50"></div>
+                    </div>
+                    <p class="text-sm font-semibold mt-1">Pathikichu</p>
+                    <p class="text-xs text-gray-500">Tamil</p>
+                </article>
+                <!-- More latest releases here -->
+            </div>
+
+
+            
+            <h1 class="text-[25px] text-gray-700 font-bold mt-10 mb-5">Radio Staition</h1>
+            <div class="grid grid-cols-6 gap-4">
+                <article class="flex flex-col items-center">
+                    <div class="w-32 h-32 relative group">
+                        <img src="./MostSearchedSongsTamil_20250304071903_150x150.jpg" class="rounded-full w-full h-full">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50"></div>
+                    </div>
+                    <p class="text-sm font-semibold mt-1">Latest Song 1</p>
+                    <p class="text-xs text-gray-500">Artist Name</p>
+                </article>
+                <article class="flex flex-col items-center">
+                    <div class="w-32 h-32 relative group">
+                        <img src="./Dragon-Tamil-2025-20250221231203-150x150 - Copy.jpg" class="rounded-full w-full h-full">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50"></div>
+                    </div>
+                    <p class="text-sm font-semibold mt-1">Latest Song 2</p>
+                    <p class="text-xs text-gray-500">Artist Name</p>
+                </article>
+                <article class="flex flex-col items-center">
+                    <div class="w-32 h-32 relative group">
+                        <img src="./Paiya-Dei-from-Think-Indie-Tamil-2024-20241023225604-150x150.jpg" class="rounded-full w-full h-full">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50"></div>
+                    </div>
+                    <p class="text-sm font-semibold mt-1">Latest Song 2</p>
+                    <p class="text-xs text-gray-500">Artist Name</p>
+                </article>
+                <article class="flex flex-col items-center">
+                    <div class="w-32 h-32 relative group">
+                        <img src="./charts_Tamil2000s_171230_20240408062044_150x150.jpg" class="rounded-full w-full h-full">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50"></div>
+                    </div>
+                    <p class="text-sm font-semibold mt-1">Latest Song 2</p>
+                    <p class="text-xs text-gray-500">Artist Name</p>
+                </article>
+                <article class="flex flex-col items-center">
+                    <div class="w-32 h-32 relative group">
+                        <img src="./Pathikichu-From-Vidaamuyarchi-Tamil-2025-20250119080744-150x150.jpg" class="rounded-full w-full h-full">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50"></div>
+                    </div>
+                    <p class="text-sm font-semibold mt-1">Latest Song 2</p>
+                    <p class="text-xs text-gray-500">Artist Name</p>
+                </article>
+                <article class="flex flex-col items-center">
+                    <div class="w-32 h-32 relative group">
+                        <img src="./Amaran-Tamil-Tamil-2024-20241119174100-150x150.jpg" class="rounded-full w-full h-full">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50"></div>
+                    </div>
+                    <p class="text-sm font-semibold mt-1">Latest Song 2</p>
+                    <p class="text-xs text-gray-500">Artist Name</p>
+                </article>
+                
+                <article class="flex flex-col items-center">
+                    <div class="w-32 h-32 relative group">
+                        <img src="./charts_Tamil2000s_171230_20240408062044_150x150.jpg" class="rounded-full w-full h-full">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50"></div>
+                    </div>
+                    <p class="text-sm font-semibold mt-1">Latest Song 2</p>
+                    <p class="text-xs text-gray-500">Artist Name</p>
+                </article>
+                <article class="flex flex-col items-center">
+                    <div class="w-32 h-32 relative group">
+                        <img src="./Pathikichu-From-Vidaamuyarchi-Tamil-2025-20250119080744-150x150.jpg" class="rounded-full w-full h-full">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50"></div>
+                    </div>
+                    <p class="text-sm font-semibold mt-1">Latest Song 2</p>
+                    <p class="text-xs text-gray-500">Artist Name</p>
+                </article>
+                <article class="flex flex-col items-center">
+                    <div class="w-32 h-32 relative group">
+                        <img src="./Amaran-Tamil-Tamil-2024-20241119174100-150x150.jpg" class="rounded-full w-full h-full">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50"></div>
+                    </div>
+                    <p class="text-sm font-semibold mt-1">Latest Song 2</p>
+                    <p class="text-xs text-gray-500">Artist Name</p>
+                </article>
+                <article class="flex flex-col items-center">
+                    <div class="w-32 h-32 relative group">
+                        <img src="./MostSearchedSongsTamil_20250304071903_150x150.jpg" class="rounded-full w-full h-full">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50"></div>
+                    </div>
+                    <p class="text-sm font-semibold mt-1">Latest Song 1</p>
+                    <p class="text-xs text-gray-500">Artist Name</p>
+                </article>
+                <article class="flex flex-col items-center">
+                    <div class="w-32 h-32 relative group">
+                        <img src="./Dragon-Tamil-2025-20250221231203-150x150 - Copy.jpg" class="rounded-full w-full h-full">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50"></div>
+                    </div>
+                    <p class="text-sm font-semibold mt-1">Latest Song 2</p>
+                    <p class="text-xs text-gray-500">Artist Name</p>
+                </article>
+                <article class="flex flex-col items-center">
+                    <div class="w-32 h-32 relative group">
+                        <img src="./Paiya-Dei-from-Think-Indie-Tamil-2024-20241023225604-150x150.jpg" class="rounded-full w-full h-full">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50"></div>
+                    </div>
+                    <p class="text-sm font-semibold mt-1">Latest Song 2</p>
+                    <p class="text-xs text-gray-500">Artist Name</p>
+                </article>
+                
+            </div>
+
+
+
+
+            
+    <div class="bg-gray-200 py-10">
+        <div class="max-w-7xl mx-auto px-5">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 text-sm text-gray-700">
+                
+                <!-- Top Artists -->
+                <div>
+                    <h3 class="font-semibold text-gray-900">TOP ARTISTS</h3>
+                    <ul class="mt-2 space-y-1">
+                        <li>Neha Kakkar</li>
+                        <li>Arijit Singh</li>
+                        <li>Badshah</li>
+                        <li>Atif Aslam</li>
+                        <li>Justin Bieber</li>
+                        <li>Himesh Reshammiya</li>
+                        <li>Lata Mangeshkar</li>
+                        <li>Diljit Dosanjh</li>
+                        <li>Ed Sheeran</li>
+                        <li>Shreya Ghoshal</li>
+                        <li>Sanam Puri</li>
+                        <li>Armaan Malik</li>
+                    </ul>
+                </div>
+
+                <!-- Top Actors -->
+                <div>
+                    <h3 class="font-semibold text-gray-900">TOP ACTORS</h3>
+                    <ul class="mt-2 space-y-1">
+                        <li>Salman Khan</li>
+                        <li>Allu Arjun</li>
+                        <li>Sunny Leone</li>
+                        <li>Amitabh Bachchan</li>
+                        <li>Varun Dhawan</li>
+                    </ul>
+                    <h3 class="font-semibold text-gray-900 mt-4">BROWSE</h3>
+                    <ul class="mt-2 space-y-1">
+                        <li>New Releases</li>
+                        <li>Featured Playlists</li>
+                        <li>Weekly Top Songs</li>
+                        <li>Top Artists</li>
+                        <li>Top Charts</li>
+                        <li>Top Radios</li>
+                    </ul>
+                </div>
+
+                <!-- Devotional Songs -->
+                <div>
+                    <h3 class="font-semibold text-gray-900">DEVOTIONAL SONGS</h3>
+                    <ul class="mt-2 space-y-1">
+                        <li>Krishna Bhajan</li>
+                        <li>Mahamrityunjaya Mantra</li>
+                        <li>Deva Shree Ganesha</li>
+                        <li>Hanuman Chalisa</li>
+                        <li>Gayatri Mantra</li>
+                        <li>Mata Ke Bhajan</li>
+                        <li>Durga Chalisa</li>
+                        <li>Maiya Yashoda</li>
+                        <li>Bhakti Geet</li>
+                    </ul>
+                </div>
+
+                <!-- Language -->
+                <div>
+                    <h3 class="font-semibold text-gray-900">LANGUAGE</h3>
+                    <ul class="mt-2 space-y-1">
+                        <li>Hindi Songs</li>
+                        <li>Punjabi Songs</li>
+                        <li>Bhojpuri Songs</li>
+                        <li>Tamil Songs</li>
+                        <li>Telugu Songs</li>
+                        <li>Kannada Songs</li>
+                        <li>Gujarati Songs</li>
+                        <li>Marathi Songs</li>
+                        <li>Odia Songs</li>
+                        <li>Rajasthani Songs</li>
+                        <li>Haryanvi Songs</li>
+                        <li>Assamese Songs</li>
+                        <li>Malayalam Songs</li>
+                        <li>Bengali Songs</li>
+                    </ul>
+                </div>
+
+                <!-- Artist Originals -->
+                <div>
+                    <h3 class="font-semibold text-gray-900">ARTIST ORIGINALS</h3>
+                    <ul class="mt-2 space-y-1">
+                        <li>Zaeden - Dooriyan</li>
+                        <li>Raghav - Sufi</li>
+                        <li>SIXK - Dansa</li>
+                        <li>Siri - My Jam</li>
+                        <li>Lost Stories, "Mai Ni Meriye"</li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h3 class="font-semibold text-gray-900">COMPANY</h3>
+                    <ul class="mt-2 space-y-1">
+                        <li>About Us</li>
+                        <li>Culture</li>
+                        <li>Blog</li>
+                        <li>Jobs</li>
+                        <li>Press</li>
+                        <li>Advertise</li>
+                        <li>Terms & Privacy</li>
+                        <li>Help & Support</li>
+                        <li>Grievances</li>
+                        <li>JioSaavn Artist Insights</li>
+                        <li>JioSaavn YourCast</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Links Section -->
+            <div class="flex flex-wrap justify-center md:justify-start gap-4 text-gray-700 text-sm mt-10">
+                <a href="#">JioSaavn Pro</a>
+                <a href="#">JioSaavn for iOS</a>
+                <a href="#">JioSaavn for Android</a>
+                <a href="#">New Releases</a>
+            </div>
+
+            <!-- Copyright & Social Links -->
+            <div class="mt-6 border-t border-gray-300 pt-6 flex flex-wrap items-center justify-between text-gray-700 text-sm">
+                <p>© 2025 Saavn Media Limited All rights reserved.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-700 hover:text-blue-600"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-gray-700 hover:text-black"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-700 hover:text-red-600"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="text-gray-700 hover:text-pink-600"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-700 hover:text-blue-700"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+        </section>
+
+        <!-- Small Vertical Section (Right Sidebar) -->
+        <aside class="w-20 bg-white p-2 rounded-lg shadow-lg flex flex-col items-center border border-gray-400">
+            <div class="bg-teal-500 p-3 rounded-full">
+                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z"></path>
+                </svg>
+            </div>
+            <div class="mt-2 space-y-2 overflow-y-auto max-h-96">
+                <img src="./charts_Tamil2000s_171230_20240408062044_150x150.jpg" class="w-14 rounded-md">
+                <img src="./Amaran-Tamil-Tamil-2024-20241119174100-150x150.jpg" class="w-14 rounded-md">
+                <img src="./Chikitu-Vibe-From-Coolie-Tamil-2024-20241212221629-150x150.jpg" class="w-14 rounded-md">
+                <img src="./Devara-Part-1-Tamil-Tamil-2024-20240926171017-150x150.jpg" class="w-14 rounded-md">
+                <img src="./MostSearchedSongsTamil_20250304071903_150x150.jpg" class="w-14 rounded-md">
+                <img src="./Pathikichu-From-Vidaamuyarchi-Tamil-2025-20250119080744-150x150.jpg" class="w-14 rounded-md">
+                <img src="./Paiya-Dei-from-Think-Indie-Tamil-2024-20241023225604-150x150.jpg" class="w-14 rounded-md">
+            </div>
+        </aside>
+        <footer class="fixed bottom-0 w-full bg-gray-100 border-t border-gray-300 p-3 flex items-center justify-between">
+            <!-- Left Section: Song Info -->
+            <div class="flex items-center space-x-3">
+                <img src="./Devara-Part-1-Tamil-Tamil-2024-20240926171017-150x150.jpg" alt="Album Cover" class="w-12 h-12 rounded">
+                <div>
+                    <h4 class="text-sm font-medium">Devera</h4>
+                    <p class="text-xs text-gray-500">Telegu Films</p>
+                </div>
+            </div>
+    
+            <div class="flex items-center space-x-5 bg-white px-6 py-3 rounded-full shadow-md border border-gray-300">
+                <button class="text-gray-700 hover:text-black text-2xl"><i>⏮️</i></button>
+                <button class="text-gray-700 hover:text-black text-2xl"><i>◀️</i></button>
+                <button class="text-gray-700 hover:text-black text-2xl"><i>▶️</i></button>
+                <button class="text-gray-700 hover:text-black text-2xl"><i>⏭️</i></button>
+                <button class="text-gray-700 hover:text-black text-2xl"><i>🔀</i></button>
+            </div>
+    
+            <!-- Right Section: Time Info -->
+            <div class="flex items-center space-x-3">
+                <span class="text-sm text-gray-600">3:01 / 5:00</span>
+                <button class="text-gray-600 hover:text-black text-lg">🔊</button>
+                <button class="text-gray-600 hover:text-black text-lg">⛶</button>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
